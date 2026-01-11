@@ -1,0 +1,91 @@
+.title {
+  font-family: "Bricolage Grotesque", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  text-align: center;
+  font-size: 1.5rem;
+  margin: 3rem;
+}
+.search {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+.searchbar {
+  width: 20rem;
+  height: 2rem;
+  background: hsl(243, 27%, 20%);
+  border-radius: 0.8rem;
+  display: flex;
+  align-items: center;
+  padding: 1.5rem;
+  gap: 0.6rem;
+}
+.searchicon {
+  width: 1.2rem;
+  height: auto;
+  opacity: 0.8;
+  background-color: hsl(243, 27%, 20%);
+}
+.searchbar input {
+  flex: 1;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  background: transparent;
+  font-weight: 500;
+}
+.searchbar input::placeholder {
+  color: hsl(240, 6%, 70%);
+}
+.searchbutton {
+  border: none;
+  width: 20rem;
+  height: 3rem;
+  font-size: 1.2rem;
+  background-color: hsl(233, 67%, 56%);
+  border-radius: 0.8rem;
+  cursor: pointer;
+}
+
+.search-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 20rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-items: center;
+}
+.search-suggestions {
+  position: absolute;
+  top: calc(100% + 0.4rem);
+  left: 0;
+  right: 0;
+
+  background: hsl(243, 27%, 20%);
+  border-radius: 0.8rem;
+
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4);
+
+  z-index: 20;
+  overflow: hidden;
+}
+.suggestion {
+  padding: 0.8rem 1rem;
+  cursor: pointer;
+  font-size: 0.9rem;
+  color: white;
+
+  border-bottom: 1px solid hsl(243, 23%, 30%);
+}
+
+.suggestion:last-child {
+  border-bottom: none;
+}
+
+.suggestion:hover {
+  background: hsl(243, 23%, 24%);
+}

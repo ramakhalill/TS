@@ -1,0 +1,39 @@
+.daily-title {
+  text-align: left;
+}
+.daily-weather {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+.daily-card {
+  border-radius: 1rem;
+  background-color: hsl(243, 27%, 20%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  width: 6.4rem;
+}
+.daily-card img {
+  width: 4rem;
+  margin: 0 auto;
+}
+.day {
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: hsl(250, 6%, 84%);
+  padding: 1rem;
+}
+.temp {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 1rem;
+  font-size: 0.7rem;
+}
+.temp h2 {
+  font-weight: 600;
+  color: hsl(250, 6%, 84%);
+}

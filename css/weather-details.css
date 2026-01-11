@@ -1,0 +1,23 @@
+.weather-details {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+.details-card {
+  border-radius: 1rem;
+  background-color: hsl(243, 27%, 20%);
+  text-align: left;
+  padding: 1rem;
+  padding-left: 1.7rem;
+  width: 10rem;
+  line-height: 2.5rem;
+}
+.details-card h3 {
+  font-weight: 400;
+  font-size: 1rem;
+  color: hsl(250, 6%, 84%);
+}
+.details-card h2 {
+  font-weight: 400;
+  font-size: 1.5rem;
+}

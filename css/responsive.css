@@ -1,0 +1,205 @@
+@media (min-width: 540px) {
+    .navbar {
+  margin: 3rem;
+}
+  .logo img {
+    width: 17rem;
+  }
+  .settings {
+    width: 12rem;
+    font-size: 2.2rem;
+    padding: 1rem;
+    border-radius: 0.8rem;
+    gap: 1rem;
+    height: 4.5rem;
+  }
+  .settings img {
+    width: 1.7rem;
+  }
+/* --------------------------------- */
+  .dropdown-menu {
+    width: 20rem;
+    border-radius: 0.8rem;
+    padding: 1rem;
+  }
+
+  .dropdown-title {
+    font-size: 1rem;
+    margin-bottom: 0.2rem;
+  }
+  .option {
+    gap: 2rem;
+    margin-top: 1rem;
+    padding: 0.5rem 1.2rem;
+    border-radius: 0.8rem;
+    font-size: 1.4rem;
+  }
+  .option.active::after {
+  font-size: 2rem;
+}
+.dropdown-section:not(:last-child) {
+  padding-bottom: 0.8rem;
+  margin-bottom: 0.8em;
+}
+
+/* ---------------------------------- */
+
+.title {
+  font-size: 2.5rem;
+}
+
+.search {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 23.5rem;
+}
+.searchbar {
+  width: 40rem;
+  padding: 1.8rem;
+  margin: 2.5rem;
+}
+.searchicon {
+  width: 1.6rem;
+}
+.searchbar input {
+  font-size: 1.3rem;
+}
+.searchbutton {
+  width: 8rem;
+  border-radius: 0.7rem;
+  height: 3.3rem;
+}
+
+.search-suggestions {
+  top: calc(100% + 0rem);
+  left: 2.5rem;
+  width: 35rem;
+}
+.suggestion {
+  padding: 1.2rem 1.5rem;
+  font-size: 1.2rem;
+  color: white;
+}
+
+/* ---------------------------------- */
+
+.details-hourlycard {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.details {
+  padding: 2rem;
+  gap: 2.5rem;
+}
+
+.maincard {
+  background-image: url("/assets/images/placeholders/maincard-large.svg");
+  font-size: 1rem;
+  height: 17rem;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.maincard h2 {
+  font-size: 2rem;
+  padding-bottom: 0.5rem;
+}
+.maincard h3 {
+    text-align: left;
+}
+
+.status-temp h1 {
+  font-size: 6rem;
+}
+.status-temp img {
+  width: 8rem;
+
+
+}
+/* ----------------------------------- */
+.weather-details {
+  display: flex;
+}
+.details-card {
+  text-align: left;
+  padding: 1rem;
+  padding-left: 1.7rem;
+  width: 12rem;
+  line-height: 3.5rem;
+}
+.details-card h3 {
+  font-weight: 400;
+  font-size: 1.3rem;
+}
+.details-card h2 {
+  font-weight: 400;
+  font-size: 2rem;
+}
+
+/* ------------------------------------------ */
+
+.daily-title {
+  text-align: left;
+}
+.daily-weather {
+  display: flex;
+  gap: 1rem;
+}
+
+.day {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+.temp {
+  font-size: 0.8rem;
+}
+.temp h2 {
+  font-weight: 500;
+}
+
+/* ------------------------------- */
+
+.hourlycard {
+  height: 47rem;
+  padding: 0.2rem 0;
+  margin-bottom: 0rem;
+  width: 25rem;
+}
+
+.hour-left img {
+  width: 2.5rem;
+}
+
+.hour-temp {
+  font-size: 1.3rem;
+}
+
+
+.day-button {
+  font-size: 1rem;
+}
+
+
+.day-dropdown {
+  padding: 0.5rem;
+}
+
+
+.day-option {
+  padding: 0.8rem 0.6rem;
+  font-size: 1.2rem;
+  width: 10.5rem;
+}
+
+.day-option:hover {
+  background: hsl(243, 23%, 24%);
+}
+
+
+
+
+}

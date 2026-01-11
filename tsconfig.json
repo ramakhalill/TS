@@ -1,0 +1,13 @@
+{
+    "compilerOptions": {
+        "module": "ESNext",
+        "moduleResolution": "bundler",
+        "target": "ESNext",
+        "rootDir": "./src",
+        "outDir": "./dist",
+        "strict": true
+    },
+    "include": [
+        "src"
+    ]
+}

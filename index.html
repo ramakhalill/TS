@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Weather Now</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./css/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+            rel="stylesheet">
+        <link rel="stylesheet" href="./css/header.css">
+        <link rel="stylesheet" href="./css/search.css">
+        <link rel="stylesheet" href="./css/main-card.css">
+        <link rel="stylesheet" href="./css/weather-details.css">
+        <link rel="stylesheet" href="./css/daily-forecast.css">
+        <link rel="stylesheet" href="./css/hour-card.css">
+        <link rel="stylesheet" href="./css/errors.css">
+        <link rel="stylesheet" href="./css/responsive.css">
+    </head>
+    <body>
+        <header>
+            <nav class="navbar">
+                <div class="logo">
+                    <img src="./assets/images/ui/logo.svg" alt="weather logo">
+                </div>
+                <div class="dropdown">
+                    <button class="settings">
+                        <img src="./assets/images/ui/settings.svg" alt="units"
+                            width="12rem">
+                        Units
+                        <img src="./assets/images/ui/dropdown.svg"
+                            alt="arrowdown"
+                            width="10rem">
+                    </button>
+                    <div class="dropdown-menu" id="unitsMenu">
+                        <div class="dropdown-section">
+                            <p class="dropdown-title">Temperature</p>
+                            <button class="option" data-temp="metric">Celsius
+                                (°C)</button>
+                            <button class="option"
+                                data-temp="imperial">Fahrenheit (°F)</button>
+                        </div>
+
+                        <div class="dropdown-section">
+                            <p class="dropdown-title">Wind Speed</p>
+                            <button class="option"
+                                data-wind="metric">km/h</button>
+                            <button class="option"
+                                data-wind="imperial">mph</button>
+                        </div>
+                        <div class="dropdown-section">
+                            <p class="dropdown-title">Percipatation</p>
+                            <button class="option"
+                                data-precip="metric">Millimeters (mm)</button>
+                            <button class="option"
+                                data-precip="imperial">Inches (in)</button>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <section>
+                <div class="content-wrapper">
+                    <div class="title">
+                        <h1>How's the sky looking today?</h1>
+                    </div>
+                </div>
+                <div class="search">
+                    <div class="search-wrapper">
+                        <div class="searchbar">
+                            <img src="assets/images/ui/search.svg"
+                                alt="search icon"
+                                class="searchicon">
+                            <input type="text"
+                                placeholder="Search for a place...">
+                        </div>
+                        <div class="search-suggestions"></div>
+                    </div>
+                    <button class="searchbutton">
+                        Search
+                    </button>
+                </div>
+                <div class="search-error hidden">
+                    No search result found!
+                </div>
+
+                <section id="result">
+                </section>
+                <section>
+                    <div class="details-hourlycard">
+                        <div class="details">
+                            <div class="maincard">
+                                <div class="city">
+                                    <h2>city, country</h2>
+                                    <h3>date</h3>
+                                </div>
+                                <div class="status-temp">
+                                    <img src="assets/images/weather/"
+                                        alt="weather status icon">
+                                    <h1>temp</h1>
+                                </div>
+                            </div>
+                            <div class="weather-details">
+                                <div class="details-card">
+                                    <h3>Feels Like</h3>
+                                    <h2 class="feels-like">--</h2>
+                                </div>
+                                <div class="details-card">
+                                    <h3>Humidity</h3>
+                                    <h2 class="humidity">--</h2>
+                                </div>
+                                <div class="details-card">
+                                    <h3>Wind</h3>
+                                    <h2 class="wind">--</h2>
+                                </div>
+                                <div class="details-card">
+                                    <h3>Precipitation</h3>
+                                    <h2 class="precipitation">--</h2>
+                                </div>
+                            </div>
+                            <h2 class="daily-title">Daily forecast</h2>
+                            <div class="daily-weather">
+                                <div class="daily-card">
+                                    <h2 class="day"></h2>
+                                    <img src alt="day weather status"
+                                        class="weather-icon">
+                                    <div class="temp">
+                                        <h2 class="day-temp"></h2>
+                                        <h2 class="night-temp"></h2>
+                                    </div>
+                                </div>
+                                <div class="daily-card">
+                                    <h2 class="day"></h2>
+                                    <img src alt="day weather status"
+                                        class="weather-icon">
+                                    <div class="temp">
+                                        <h2 class="day-temp"></h2>
+                                        <h2 class="night-temp"></h2>
+                                    </div>
+                                </div>
+                                <div class="daily-card">
+                                    <h2 class="day"></h2>
+                                    <img src alt="day weather status"
+                                        class="weather-icon">
+                                    <div class="temp">
+                                        <h2 class="day-temp"></h2>
+                                        <h2 class="night-temp"></h2>
+                                    </div>
+                                </div>
+                                <div class="daily-card">
+                                    <h2 class="day"></h2>
+                                    <img src alt="day weather status"
+                                        class="weather-icon">
+                                    <div class="temp">
+                                        <h2 class="day-temp"></h2>
+                                        <h2 class="night-temp"></h2>
+                                    </div>
+                                </div>
+                                <div class="daily-card">
+                                    <h2 class="day"></h2>
+                                    <img src alt="day weather status"
+                                        class="weather-icon">
+                                    <div class="temp">
+                                        <h2 class="day-temp"></h2>
+                                        <h2 class="night-temp"></h2>
+                                    </div>
+                                </div>
+                                <div class="daily-card">
+                                    <h2 class="day"></h2>
+                                    <img src alt="day weather status"
+                                        class="weather-icon">
+                                    <div class="temp">
+                                        <h2 class="day-temp"></h2>
+                                        <h2 class="night-temp"></h2>
+                                    </div>
+                                </div>
+                                <div class="daily-card">
+                                    <h2 class="day"></h2>
+                                    <img src alt="day weather status"
+                                        class="weather-icon">
+                                    <div class="temp">
+                                        <h2 class="day-temp"></h2>
+                                        <h2 class="night-temp"></h2>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hourlycard">
+                            <div class="card-head">
+                                <h2 class="card-title">Hourly forecast</h2>
+
+                                <div class="day-select">
+                                    <button class="day-button">
+                                        <span class="selected-day">Today</span>
+                                        <img
+                                            src="./assets/images/ui/dropdown.svg"
+                                            alt="arrow" />
+                                    </button>
+
+                                    <div class="day-dropdown"></div>
+                                </div>
+                            </div>
+
+                            <div class="hourly-list"></div>
+
+                        </div>
+                    </div>
+                </section>
+                <section class="error-state hidden">
+                    <div class="error-content">
+                        <img src="./assets/images/ui/error.svg"
+                            alt="error icon" />
+
+                        <h1>Something went wrong</h1>
+
+                        <p>
+                            We couldn’t connect to the server (API error).
+                            Please try again in a few moments.
+                        </p>
+
+                        <button class="retry-button">
+                            <img src="./assets/images/ui/retry.svg"
+                                alt="retry" />
+                            Retry
+                        </button>
+                    </div>
+                </section>
+            </section>
+
+        </main>
+        <script type="module" src="./dist/main.js"></script>
+    </body>
+</html>

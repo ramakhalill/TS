@@ -1,0 +1,62 @@
+.details-hourlycard {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  padding: 4rem;
+  gap: 4rem;
+
+}
+
+.maincard {
+  border-radius: 0.8rem;
+  width: 100%;
+  background-image: url("/assets/images/placeholders/maincard-small.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  width: 20rem;
+  position: relative;
+  text-align: center;
+  font-size: 1rem;
+  position: relative;
+  z-index: 1;
+
+  height: 17rem;
+  display: grid;
+  place-items: center;
+
+  margin: 0;
+  text-align: center;
+  color: white;
+  padding: 2rem;
+}
+.maincard h2 {
+  font-size: 1.8rem;
+}
+.maincard h3 {
+  font-weight: 400;
+  color: hsl(250, 6%, 84%);
+}
+
+.status-temp {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+.status-temp h1 {
+  font-size: 5rem;
+  font-style: italic;
+}
+.status-temp img {
+  width: 7rem;
+  object-fit: contain;
+  height: auto;
+}
