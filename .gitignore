@@ -1,0 +1,21 @@
+# Review and feedback files
+FEEDBACK.md
+
+# Dependencies
+node_modules
+
+# Build outputs
+dist
+build
+
+# Environment
+.env
+.env.local
+
+# IDE
+.vscode
+.idea
+
+# OS
+.DS_Store
+Thumbs.db
